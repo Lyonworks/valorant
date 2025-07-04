@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Tungsten-Bold";
+  src: url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot");
+  src: url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.eot?#iefix") format("embedded-opentype"),
+       url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.woff") format("woff"),
+       url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.ttf") format("truetype"),
+       url("https://db.onlinewebfonts.com/t/561f38b1f4570de0fb8a39d691ab058c.svg#Tungsten-Bold") format("svg");
+}
+
+/* ========== Global ========== */
+body {
+  background-color: #0f1923;
+}
+
+.container {
+  max-width: fit-content;
+  padding-left: 55px;
+  padding-right: 20px;
+  margin-bottom: 55px;
+}
+
+/* ========== Header ========== */
+.main-header {
+  position: fixed;
+  width: 100%;
+  height: 11%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #111111;
+  transition: background-color 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* ========== Footer ========== */
+.main-footer {
+  height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111111;
+}
+
+/* ========== Main Agent ========== */
+.main-agents{
+  background-image: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/122e6caea8b2a2dbb6d6e71eea4e24effab342da-5120x574.png?auto=format&fit=fill&q=80&w=1901');
+  background-size: 202%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 66vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.agents-name{
+  font-family: "Tungsten-Bold", "Riot Sans", sans-serif;
+  font-weight: 400;
+  font-size: 105px;
+  line-height: 96px;
+  padding-left: 55px;
+  text-transform: uppercase;
+  color: #ece8e1;
+  word-break: break-word;
+  text-wrap: balance;
+  margin-top: 200px;
+  margin-bottom: 80px;
+}
+
+/* ========== Agent Card ========== */
+.agent-card {
+  transition: transform 0.3s ease;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.agent-card .agent-img-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.agent-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.agent-name {
+  margin-top: -1px;
+  background-color: #ece8e1;
+  color: #0f1923;
+  word-break: break-word;
+  font-family: Tungsten-Bold, "Riot Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 23px;
+  line-height: 20px;
+  letter-spacing: 0.28px;
+  font-weight: 700;
+  padding: 14px;
+  overflow: hidden;
+  white-space: normal;
+  text-wrap: balance;
+}
+
+.agent-card:hover .agent-img {
+  transform: scale(1.05);
+}
+
+.agent-card:hover .agent-name {
+  background-color: #c8c6be;
+  color: #0f1923;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ========== Agent Detail ========== */
+.agent-detail-section {
+  background-color: #0f1923;
+  min-height: 100vh;
+}
+
+.agent-detail-img {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.agent-detail-name {
+  font-family: "Tungsten-Bold", "Riot Sans", sans-serif;
+  font-size: 72px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ece8e1;
+}
+
+.abilities-section h2 {
+  font-family: "Tungsten-Bold", "Riot Sans", sans-serif;
+  font-size: 36px;
+  color: #ece8e1;
+}
+
+.ability-icon {
+  max-width: 80px;
+  margin-bottom: 10px;
+  filter: brightness(1.1);
+}
+
+.ability-card {
+  background-color: #1e1e1e;
+  transition: background-color 0.3s ease;
+}
+
+.ability-card:hover {
+  background-color: #2a2a2a;
+}
+
