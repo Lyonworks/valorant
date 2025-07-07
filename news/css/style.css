@@ -186,8 +186,62 @@
 }
 
 /* ========== News Detail ========== */
-.news-detail-page {
+.news-detail-page{
+  padding-top: 87px;
+  height:max-content;
+}
+
+.theme-id-1 {
   background-color: #ece8e1;
+}
+
+.theme-id-3 {
+  background-color: #0f1923;
+}
+
+.theme-id-8 {
+  background-color: #ece8e1;
+}
+
+.theme-id-9 {
+  background-color: #ece8e1;
+}
+
+.theme-id-10 {
+  background-color: #0f1923;
+}
+
+.theme-id-12 {
+  background-color: #ece8e1;
+}
+
+.theme-id-13 {
+  background-color: #ece8e1;
+}
+
+.theme-id-14 {
+  background-color: #ece8e1;
+}
+
+.theme-id-18 {
+  background-color: #ece8e1;
+}
+
+.theme-id-19 {
+  background-color: #ece8e1;
+}
+
+.theme-id-20 {
+  background-color: #ece8e1;
+}
+
+.theme-id-23 {
+  background-color: #ebebeb;
+}
+
+a.valorant-link {
+  color: #ff4655;
+  text-decoration: underline;
 }
 
 .news-detail-header {

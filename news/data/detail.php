@@ -159,4 +159,162 @@ $news_details = [
       ['type' => 'paragraph', 'text' => 'Experience the excitement of VCT Americas live at the iconic Riot Games Arena...'],
     ]
   ],
+  11 => [
+    'content' => [
+      ['type' => 'video', 'url' => 'https://www.youtube.com/watch?v=n6iY-0KgHnk']
+    ]
+  ],
+  15 => [
+    'content' => [
+      ['type' => 'video', 'url' => 'https://www.youtube.com/watch?v=jAj_nbWYb7g']
+    ]
+  ],
+  16 => [
+    'content' => [
+      ['type' => 'video', 'url' => 'https://www.youtube.com/watch?v=NiedTYE_HyA']
+    ]
+  ],
+  17 => [
+    'content' => [
+      ['type' => 'video', 'url' => 'https://www.youtube.com/watch?v=_oYnSaw9A-c']
+    ]
+  ],
+  21 => [
+    'content' => [
+      ['type' => 'video', 'url' => 'https://www.youtube.com/watch?v=gERZohfSv6Q']
+    ]
+  ],
+  22 => [
+    'content' => [
+      ['type' => 'video', 'url' => 'https://www.youtube.com/watch?v=L6Q5ozkdBbw']
+    ]
+  ],
+  23 => [
+    'image' => 'images/Masters Toronto Everything You Need To Know.jpg',
+    'date' => 'May 28, 2025',
+    'author' => 'Valorant Esports Staff',
+    'title' => 'Masters Toronto: Everything You Need To Know',
+    'description' => 'Get the full rundown on the second global event of the 2025 VCT season!',
+    'content' => [
+      ['type' => 'paragraph', 'text' => 'The race to Champions Paris doesn’t stop, and the twelve best teams from the Stage 1 International Leagues are heading to Toronto to compete for Championship Points and a chance to earn a Masters Trophy. For many of them, the die is already cast. Some big names didn’t make it, others are here looking for redemption, and a few are making their first appearance. Masters Toronto is set to bring plenty of surprises from June 7 to 22.'],
+      ['type' => 'heading', 'text' => 'Meet the Competitors'],
+      ['type' => 'paragraph', 'text' => 'Following the hype of Masters Bangkok, the 2025 VCT season ramped up across the four International Leagues: VCT Americas, VCT CN, VCT EMEA, and VCT Pacific. In each league, twelve teams went head-to-head to determine which three would represent their region in Toronto. The list below represents the top talent from each region:'],
+      ['type' => 'heading', 'text' => 'Tournament Format'],
+      ['type' => 'video', 'url' => 'https://youtu.be/L6Q5ozkdBbw'],
+      ['type' => 'paragraph', 'text' => 'Masters Toronto will be split into two parts - the Swiss Stage and the Playoffs Stage.'],
+      ['type' => 'paragraph', 'text' => 'Not every team starts from the same spot. G2, XLG, RRQ, and FNC came out on top in their Stage 1 leagues, so they’re skipping the first round and heading straight to the Playoffs.'],
+      ['type' => 'image', 'image' => 'images/Tournament Format1.jpg'],
+      ['type' => 'paragraph', 'text' => 'Swiss Stage (Jun 7 - 11)'],
+      ['type' => 'paragraph', 'text' => "The other eight teams kick things off in the Swiss Stage, where only four will move on. Win twice and you're through. Lose twice and you're out. Every match is a Best-of-Three."],
+      ['type' => 'image', 'image' => 'images/Tournament Format2.jpg'],
+      ['type' => 'paragraph', 'text' => 'Playoffs Stage (Jun 13 - 22)'],
+      ['type' => 'paragraph', 'text' => 'Then it’s on to the Playoffs; a double-elimination bracket where one loss sends you to the Lower Bracket, and two sends you home.'],
+      ['type' => 'paragraph', 'text' => 'Masters Toronto isn’t just about the title. Championship Points are up for grabs, and every win gets teams closer to Champions.'],
+      ['type' => 'heading', 'text' => 'Schedule'],
+      ['type' => 'image', 'image' => 'images/Schedule1.jpg'],
+      ['type' => 'image', 'image' => 'images/Schedule2.jpg'],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'Swiss Stage',
+            'type' => 'list',
+            'items' => ['Jun 7, Saturday – Swiss Stage',
+                        'Jun 8, Sunday – Swiss Stage',
+                        'Jun 9, Monday – Swiss Stage',
+                        'Jun 10, Tuesday – Swiss Stage',
+                        'Jun 11, Wednesday – Swiss Stage']
+          ],
+          [
+            'text' => 'No Matches',
+            'type' => 'list',
+            'items' => ['Jun 12, Thursday – No Matches']
+          ],
+          [
+            'text' => 'Playoffs Stage',
+            'type' => 'list',
+            'items' => ['Jun 13, Friday – Playoffs Stage',
+                        'Jun 14, Saturday – Playoffs Stage',
+                        'Jun 15, Sunday – Playoffs Stage',
+                        'Jun 16, Monday – Playoffs Stage',
+                        'Jun 17, Tuesday – Playoffs Stage']
+          ],
+          [
+            'text' => 'No Matches',
+            'type' => 'list',
+            'items' => ['Jun 18, Wednesday – No Matches',
+                        'Jun 19, Thursday – No Matches']
+          ],
+          [
+            'text' => 'Playoffs Stage',
+            'type' => 'list',
+            'items' => ['Jun 20, Friday – Lower Bracket Final',
+                        'Jun 21, Saturday – Lower Bracket Final',
+                        'Jun 22, Sunday – Grand Final']
+          ]
+        ]
+      ],
+      ['type' => 'heading', 'text' => 'Tournament MVP'],
+      ['type' => 'paragraph', 'text' => 'Sixty players came to compete, but only one will be crowned MVP. The Toronto Masters MVP is all about impact. To be in contention, competitors must deliver significant impact from the group stage all the way through to a standout showing in the Grand Final. From there, it’s decided based on who had the best overall tournament. A panel of talent, co-streamers, and media will crown the player who defined the tournament.'],
+      ['type' => 'paragraph', 'text' => 'Stay after the final to see who takes home the glory and the elusive MVP bracelet made by our friends at Good Art.'],
+      ['type' => 'image', 'image' => 'images/Tournament MVP.jpg'],
+      ['type' => 'heading', 'text' => 'Masters Toronto Drops & Pick’Em'],
+      ['type' => 'paragraph', 'text' => 'Tune in to Masters Toronto live and earn exclusive Drops! This time, you can unlock a special Title and Spray just by watching.'],
+      ['type' => 'paragraph', 'text' => 'We’re also bringing Pick’Em to Masters for the first time! More info to come soon.'],
+      ['type' => 'image', 'image' => 'images/Masters Toronto Drops & Pick’Em.jpg'],
+      ['type' => 'heading', 'text' => 'Masters Toronto Drops & Pick’Em'],
+      ['type' => 'paragraph', 'text' => 'Meet the faces, sharp eyes and voices bringing every clutch, strat, and moment to life at Masters Toronto.'],
+      ['type' => 'image', 'image' => 'images/Masters Toronto On-Air talent1.jpg'],
+      ['type' => 'image', 'image' => 'images/Masters Toronto On-Air talent2.jpg'],
+      ['type' => 'heading', 'text' => 'Where to Watch'],
+      ['type' => 'paragraph', 'text' => 'The tournament will be broadcast in multiple languages with the full list of channels and Watch Parties shared in the coming weeks.'],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'Twitch',
+            'type' => 'list',
+            'items' => [
+              ['text' => 'twitch.tv/valorant', 'url' => 'https://twitch.tv/valorant']
+            ]
+          ],
+          [
+            'text' => 'YouTube',
+            'type' => 'list',
+            'items' => [
+              ['text' => 'English YouTube', 'url' => 'https://www.youtube.com/@ValorantEsports']
+            ]
+          ],
+          [
+            'text' => 'TikTok',
+            'type' => 'list',
+            'items' => [
+              ['text' => 'TikTok Live Feed', 'url' => 'https://www.tiktok.com/@valorantesports/live']
+            ]
+          ]
+        ]
+      ],
+      ['type' => 'heading', 'text' => 'The Road to Champions Paris'],
+      ['type' => 'paragraph', 'text' => 'Masters Toronto is the next big stop on the road to becoming World Champion. Teams from all over the world are grinding through international leagues and global events, all chasing a spot at the biggest event of the year, VALORANT Champions Paris.'],
+      ['type' => 'image', 'image' => 'images/The Road to Champions Paris.jpg'],
+      ['type' => 'heading', 'text' => 'The New Championship Point System'],
+      ['type' => 'paragraph', 'text' => 'Championship Points are updated to make sure the whole season counts. Just like last year, teams will earn points at every stage, but this time, we’re raising the stakes. We’re handing out more points at Masters and Playoffs, and giving every team a fresh start mid-season by making each stage stand on its own.'],
+      ['type' => 'paragraph', 'text' => 'Regular season matches will still give out one point per win, but major events like Kickoff, Playoffs, and Masters now award points to more teams. Both Kickoff and IL Playoffs will grant points to the top four teams. Masters Bangkok gave points to the top four, but Masters Toronto goes even further, more teams (top six) will earn points, and there are more Championship Points on the line overall.'],
+      ['type' => 'image', 'image' => 'images/The New Championship Point System.jpg'],
+      ['type' => 'heading', 'text' => 'WHERE TO FOLLOW THE VCT'],
+      ['type' => 'paragraph', 'text' => 'Make sure to follow the official VALORANT Esports social channels for additional information about 2025 VCT Season:'],
+      ['type' => 'list', 'items' => [
+        'Twitter/X: @valorantesports',
+        'Facebook: /valorantesports',
+        'Instagram: @valorantesports',
+        'TikTok: @valorantesports',
+        'Twitch: https://www.twitch.tv/valorant',
+        'YouTube: https://www.youtube.com/@ValorantEsports',
+        'Photos from the Event: https://www.flickr.com/photos/valorantesports/',
+        'Official VALORANT Esports News: valorantesports.com/news',
+        'Web: https://valorantesports.com'
+      ]],
+    ]
+  ],
+  24 => [
+    'content' => [
+      ['type' => 'video', 'url' => 'https://www.youtube.com/watch?v=1XphwnkF2a8']
+    ]
+  ],
 ];

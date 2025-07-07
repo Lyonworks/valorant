@@ -7,8 +7,8 @@
   </div>  
   <div class="container-lg news-container">
     <div class="row g-5">
-      <?php foreach ($news as $item): ?>
-        <div class="col-sm-6 col-md-4">
+      <?php foreach ($news as $index => $item): ?>
+        <div class="col-sm-6 col-md-4 news-item d-none" data-index="<?= $index ?>">
           <a href="news-detail.php?id=<?= $item['id'] ?>" class="news-card text-decoration-none d-block">
             <div class="news-img-container">
               <img src="<?= $item['image'] ?>" class="card-img-top" alt="<?= $item['title'] ?>">
@@ -38,5 +38,34 @@
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const newsItems = document.querySelectorAll(".news-item");
+    const showMoreButton = document.querySelector(".show-more");
+    let visibleCount = 12;
+
+    function updateVisibleItems() {
+      newsItems.forEach((item, index) => {
+        if (index < visibleCount) {
+          item.classList.remove("d-none");
+        } else {
+          item.classList.add("d-none");
+        }
+      });
+
+      if (visibleCount >= newsItems.length) {
+        showMoreButton.style.display = "none";
+      }
+    }
+
+    showMoreButton.addEventListener("click", () => {
+      visibleCount += 12;
+      updateVisibleItems();
+    });
+
+    updateVisibleItems();
+  });
+</script>
 
 <?php include 'partials/footer.php'; ?>
