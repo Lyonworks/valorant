@@ -31,6 +31,3 @@
          style="max-height: 40px;" 
          class="animate__animated animate__fadeInDown"/>
   </header>
-</body>
-
-</html>
