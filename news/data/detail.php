@@ -16,16 +16,16 @@ $news_details = [
         '#2 Championship Points'
       ]],
       ['type' => 'paragraph', 'text' => 'A new stage is on the way – Corrode drops in, along with a new patch, fresh comps, and new players. Will we see a new champion too? From July 18 to August 31, experience all the excitement of VCT Americas Stage 2!'],
-      ['type' => 'image', 'image' => 'images/VCT Americas 2025 Stage 2.jpg'],
+      ['type' => 'video', 'url' => 'https://youtu.be/RgPTI4u5aME'],
       ['type' => 'heading', 'text' => 'TOURNAMENT SCHEDULE AND FORMAT'],
       ['type' => 'paragraph', 'text' => 'In case you missed it, the Stage 2 Draw Show determined the groups and matchups of all 12 teams.'],
       ['type' => 'paragraph', 'text' => 'Here are the Alpha and Omega groups:'],
-      ['type' => 'image', 'image' => 'images/VCT Americas 2025 Stage 2.jpg'],
+      ['type' => 'image', 'image' => 'images/TOURNAMENT SCHEDULE AND FORMAT1.jpg'],
       ['type' => 'paragraph', 'text' => 'Teams are split into two groups and will compete in a round-robin format within their group.'],
-      ['type' => 'image', 'image' => 'images/VCT Americas 2025 Stage 2.jpg'],
-      ['type' => 'image', 'image' => 'images/VCT Americas 2025 Stage 2.jpg'],
+      ['type' => 'image', 'image' => 'images/TOURNAMENT SCHEDULE AND FORMAT2.jpg'],
+      ['type' => 'image', 'image' => 'images/TOURNAMENT SCHEDULE AND FORMAT3.jpg'],
       ['type' => 'paragraph', 'text' => 'The top four teams from each group advance to the Playoffs, where the #1 seeds earn a Round 1 bye and the #4 seeds start in the Lower Bracket.'],
-      ['type' => 'image', 'image' => 'images/VCT Americas 2025 Stage 2.jpg'],
+      ['type' => 'image', 'image' => 'images/TOURNAMENT SCHEDULE AND FORMAT4.jpg'],
       ['type' => 'heading', 'text' => 'BUY TICKETS'],
       ['type' => 'paragraph', 'text' => 'Experience the excitement of VCT Americas live at the iconic Riot Games Arena in Los Angeles. With hundreds of fans, vibrant LED displays, and an electrifying atmosphere, you’ll be right in the heart of the action as you cheer on your favorite teams in this final stretch of the season.'],
       ['type' => 'heading', 'text' => 'Stage 2 Tickets On-Sale Date:'],
@@ -35,20 +35,62 @@ $news_details = [
       ['type' => 'heading', 'text' => 'WHERE TO WATCH'],
       ['type' => 'paragraph', 'text' => 'Catch all the action on Twitch, YouTube, or TikTok! Official VCT Americas broadcasts will be available in English, Spanish, and Portuguese. Broadcast days and times will be updated in real time throughout the season on valorantesports.com.'],
       ['type' => 'heading', 'text' => 'English'],
+      ['type' => 'list',
+        'items' => [
+          ['text' => 'Twitch - /valorant_americas', 'url' => 'https://www.twitch.tv/valorant_americas'],
+          ['text' => 'YouTube - @valorant_americas', 'url' => 'https://www.youtube.com/@valorant_americas'],
+          ['text' => 'TikTok - @valesportsna', 'url' => 'https://www.tiktok.com/@valesportsna']
+        ]
+      ],
       ['type' => 'heading', 'text' => 'Portuguese'],
+      ['type' => 'list',
+        'items' => [
+          ['text' => 'Twitch - /valorant_br', 'url' => 'https://www.twitch.tv/valorant_br'],
+          ['text' => 'YouTube - @valorantesportsbr', 'url' => 'https://www.youtube.com/@valorantesportsbr'],
+          ['text' => 'TikTok - @valesportsbr', 'url' => 'https://www.tiktok.com/@valesportsbr']
+        ]
+      ],
       ['type' => 'heading', 'text' => 'Spanish'],
+      ['type' => 'list',
+        'items' => [
+          ['text' => 'Twitch - /valorant_la', 'url' => 'https://www.twitch.tv/valorant_la'],
+          ['text' => 'YouTube - @valorantesportsla', 'url' => 'https://www.youtube.com/@VALORANTEsportsLA']
+        ]
+      ],
       ['type' => 'heading', 'text' => 'CO-STREAMING'],
-      ['type' => 'paragraph', 'text' => 'Anyone who wishes to host a Watch Party must read and agree to our VCT Co-streaming Guidelines and comply with the following steps in order to gain permission to co-stream the event:'],
-      ['type' => 'paragraph', 'text' => 'If you’re broadcasting from North America, sign up to host a Watch Party here. Your watch party must also comply with the Watch Party Guidelines. If you can do both, you’re clear to kick off your Watch Party come game day. Please note that this does not apply to the global events (Masters Bangkok, Masters Toronto, Champions Paris) as those require additional special permissions.'],
-      ['type' => 'paragraph', 'text' => 'If you’re from Latin America and want to co-stream VCT Americas in Spanish, apply to host a Watch Party here. Then, keep an eye on your email. Please allow a few days for review. If your application is approved, you’ll receive a message from us giving you permission.'],
-      ['type' => 'paragraph', 'text' => 'If you’re from Brazil and want to co-stream VCT Americas in Brazilian Portuguese, apply to host a Watch Party here. Then, keep an eye on your email. Please allow a few days for review. If your application is approved, you’ll receive a message from us giving you permission.'],
-      ['type' => 'paragraph', 'text' => 'If you’re broadcasting from anywhere else in the world, sign up to host an International Watch Party here. All International Watch Parties must comply with the VCT Co-streaming Guidelines. If you can do both, you’re clear to kick off your Watch Party on game day.'],
+      ['type' => 'paragraph', 'text' => 'Anyone who wishes to host a Watch Party must read and agree to our <a href="https://example.com/costream-guidelines" class="valorant-link" target="_blank" rel="noopener noreferrer">VCT Co-streaming Guidelines</a> and comply with the following steps in order to gain permission to co-stream the event:'],
+      ['type' => 'paragraph', 'text' => 'If you’re broadcasting from <strong>North America</strong>, <a href="https://example.com/watchparty/signup" class="valorant-link" target="_blank" rel="noopener noreferrer">sign up to host a Watch Party here</a>. Your watch party must also comply with the Watch Party Guidelines. If you can do both, you’re clear to kick off your Watch Party come game day. Please note that this does not apply to the global events (Masters Bangkok, Masters Toronto, Champions Paris) as those require additional special permissions.'],
+      ['type' => 'paragraph', 'text' => 'If you’re from <strong>Latin America</strong> and want to co-stream VCT Americas in Spanish, <a href="https://example.com/watchparty/latin" class="valorant-link" target="_blank" rel="noopener noreferrer">apply to host a Watch Party here</a>. Then, keep an eye on your email. Please allow a few days for review. If your application is approved, you’ll receive a message from us giving you permission.'],
+      ['type' => 'paragraph', 'text' => 'If you’re from <strong>Brazil</strong> and want to co-stream VCT Americas in Brazilian Portuguese, <a href="https://docs.google.com/forms/d/e/1FAIpQLSekoUUKpBgPeHxzI-HVpSlNlwhWqbRun0q3J_yYjHzveiTCrA/viewform" class="valorant-link" target="_blank" rel="noopener noreferrer">apply to host a Watch Party here</a>. Then, keep an eye on your email. Please allow a few days for review. If your application is approved, you’ll receive a message from us giving you permission.'],
+      ['type' => 'paragraph', 'text' => 'If you’re broadcasting from anywhere else in the world, <a href="https://example.com/watchparty/international" class="valorant-link" target="_blank" rel="noopener noreferrer">sign up to host an International Watch Party here</a>. All International Watch Parties must comply with the VCT Co-streaming Guidelines. If you can do both, you’re clear to kick off your Watch Party on game day.'],
       ['type' => 'heading', 'text' => 'SOCIAL'],
       ['type' => 'paragraph', 'text' => 'Stay up to date on all things #VCTAmericas across our official social channels.'],
-      ['type' => 'paragraph', 'text' => 'Photos on Flickr - /vctamericas'],
+      ['type' => 'paragraph', 'text' => 'Photos on Flickr - <a href="https://www.flickr.com/photos/vctamericas/" class="valorant-link" target="_blank" rel="noopener noreferrer">/vctamericas</a>'],
       ['type' => 'heading', 'text' => 'English'],
+      ['type' => 'list',
+        'items' => [
+          ['text' => 'X (formerly Twitter) - @valesportsna', 'url' => 'https://x.com/valesportsna'],
+          ['text' => 'Instagram - @valesportsna', 'url' => 'https://www.instagram.com/valesportsna/'],
+          ['text' => 'TikTok - @valesportsna', 'url' => 'https://www.tiktok.com/@valesportsna']
+        ]
+      ],
       ['type' => 'heading', 'text' => 'Portuguese'],
+      ['type' => 'list',
+        'items' => [
+          ['text' => 'X (formerly Twitter) - @valesportsbr', 'url' => 'https://x.com/valesportsbr'],
+          ['text' => 'Instagram - @valesportsbr', 'url' => 'https://www.instagram.com/valesportsbr/'],
+          ['text' => 'TikTok - @valesportsbr', 'url' => 'https://www.tiktok.com/@valesportsbr'],
+          ['text' => 'Facebook - /valorantesportsbr', 'url' => 'https://www.facebook.com/valorantesportsbr/']
+        ]
+      ],
       ['type' => 'heading', 'text' => 'Spanish'],
+      ['type' => 'list',
+        'items' => [
+          ['text' => 'X (formerly Twitter) - @valesportsla', 'url' => 'https://x.com/valesportsla'],
+          ['text' => 'Instagram - @valesportsla', 'url' => 'https://www.instagram.com/valesportsla/'],
+          ['text' => 'TikTok - @valesportsla', 'url' => 'https://www.tiktok.com/@valesportsla']
+        ]
+      ],
       ['type' => 'heading', 'text' => 'PARTNERS'],
       ['type' => 'paragraph', 'text' => 'We’re excited to welcome back the support of our portfolio of VCT Americas partners that level up the VCT Americas experience with bespoke moments, activations, giveaways for our passionate fanbase: '],
       ['type' => 'heading', 'text' => 'Red Bull'],
@@ -73,21 +115,73 @@ $news_details = [
     ]
   ],
   3 => [
-    'title' => 'VCT Americas 2025 Stage 2: Everything You Need to Know',
-    'date' => 'June 27, 2025',
-    'author' => 'Valorant Esports Staff',
+    'image' => 'VALORANT Patch Notes 11.00.jpg',
+    'date' => '6/24/2025',
+    'author' => 'Ashley Tsao',
+    'title' => 'VALORANT Patch Notes 11.00',
+    'description' => 'Agent updates, new map Corrode, map rotation, and so much more!',
     'content' => [
-      ['type' => 'paragraph', 'text' => 'Stage 2 kicks off on July 18th at 2pm PT...'],
-      ['type' => 'heading', 'text' => 'TOURNAMENT SCHEDULE AND FORMAT'],
-      ['type' => 'paragraph', 'text' => 'In case you missed it, the Stage 2 Draw Show determined the groups...'],
+      ['type' => 'paragraph', 'text' => 'Heya folks! It’s Ash and I’m going to get straight into it because this is a BIG patch. Let’s go!'],
+      ['type' => 'paragraph', 'text' => 'TLDR;'],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'Agents',
+            'type' => 'list',
+            'items' => ['Agent abilities adjusted = Waylay, Reyna, Phoenix, Neon',
+                        'Agent clarity and consistency improvements = Breach, Sova, Clove, Killjoy, Cypher, Omen, Brimstone']
+          ],
+          [
+            'text' => 'Maps',
+            'type' => 'list',
+            'items' => ['New map = Corrode',
+                        'New mode = Corrode Only queue in Swiftplay for 5 days (to help you learn the map!)',
+                        'For Competitive and Deathmatch = Bind and Corrode are in, Pearl and Split are out',
+                        'For the first 2 weeks of Competitive, Corrode RR losses are reduced by 50%, wins are still 100% (to also help you learn the map!)']
+          ],
+          [
+            'text' => 'Competitive',
+            'type' => 'list',
+            'items' => ['You may see less of a drop in rank after completing placements for this midseason reset.',
+                        'The maximum rank you can place is now Ascendant 3 instead of Ascendant 1.']
+          ]
+        ]
+      ],
+      ['type' => 'paragraph', 'text' => "Now there’s other spicy updates, such as the esports hub coming to console, so grab a coffee and jump in below!"],
+      ['type' => 'heading', 'text' => "ALL PLATFORMS"],
+      ['type' => 'heading', 'text' => 'GENERAL UPDATES'],
       ['type' => 'list', 'items' => [
-        'Stage 2 Champion',
-        'Stage 2 Runner-up',
-        '#1 Championship Points',
-        '#2 Championship Points'
+        'Suppression visual effects have been updated to be more visible on opponents to improve clarity of the debuff',
+        'We’ve added new UI/UX animations around picking up the spike to hopefully make it more obvious when players have picked it up.',
       ]],
-      ['type' => 'heading', 'text' => 'BUY TICKETS'],
-      ['type' => 'paragraph', 'text' => 'Experience the excitement of VCT Americas live at the iconic Riot Games Arena...'],
+      ['type' => 'gif', 'url' => 'images/GENERAL UPDATES.gif'],
+      ['type' => 'heading', 'text' => 'AGENT UPDATES'],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'Waylay',
+            'type' => 'list',
+            'items' => ['Waylay has shown a steep mastery curve since her release, where her win rate significantly improves the more games you play. That said, she is still slightly weak at all skill levels. These buffs aim to sharpen her ability to take fights right after exiting Lightspeed and make her Refract loop easier to play around, as well as improve Waylay’s flow and gameplay feel. Saturate does not land at a comparable rate to other abilities, so we’re increasing its power to justify its 300 credit cost.',
+                        'Agent clarity and consistency improvements = Breach, Sova, Clove, Killjoy, Cypher, Omen, Brimstone']
+          ]
+        ]
+      ],
+      ['type' => 'paragraph', 'text' => 'As we continue to tune ability strength for consistency, there’s opportunity for a couple of small changes with a few of our Agents so there’s more room for counterplay and opportunities for clutch moments like flicking to turn flashes.'],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'Reyna',
+            'type' => 'list',
+            'items' => ['Waylay has shown a steep mastery curve since her release, where her win rate significantly improves the more games you play. That said, she is still slightly weak at all skill levels. These buffs aim to sharpen her ability to take fights right after exiting Lightspeed and make her Refract loop easier to play around, as well as improve Waylay’s flow and gameplay feel. Saturate does not land at a comparable rate to other abilities, so we’re increasing its power to justify its 300 credit cost.',
+                        'Agent clarity and consistency improvements = Breach, Sova, Clove, Killjoy, Cypher, Omen, Brimstone']
+          ]
+        ]
+      ],
+      ['type' => 'paragraph', 'text' => "We’re also adjusting Neon’s Relay Bolt and Phoenix’s Curveball to have room for some additional counterplay. These abilities are meant to create strong combat advantages, but their fast activation left little time for opponents to respond. These changes aim to increase moment-to-moment counterplay without removing the need to anticipate and position against them."],
+      ['type' => 'heading', 'text' => "AGENT UPDATES"],
+      ['type' => 'paragraph', 'text' => "We’ve made some adjustments to agents to improve clarity and consistency, as well as some balance changes."],
+      ['type' => 'heading', 'text' => "MAP UPDATES"],
+      ['type' => 'paragraph', 'text' => "We’re introducing a new map, Corrode, and rotating out Pearl and Split from Competitive and Deathmatch. Bind and Corrode are now in Competitive and Deathmatch."],
+      ['type' => 'heading', 'text' => "COMPETITIVE UPDATES"],
+      ['type' => 'paragraph', 'text' => "For this midseason reset, you may see less of a drop in rank after completing placements."],
+      ['type' => 'paragraph', 'text' => "As always, we’re working hard to fix bugs and improve your experience."],
     ]
   ],
   4 => [
@@ -199,6 +293,15 @@ $news_details = [
       ['type' => 'paragraph', 'text' => 'The race to Champions Paris doesn’t stop, and the twelve best teams from the Stage 1 International Leagues are heading to Toronto to compete for Championship Points and a chance to earn a Masters Trophy. For many of them, the die is already cast. Some big names didn’t make it, others are here looking for redemption, and a few are making their first appearance. Masters Toronto is set to bring plenty of surprises from June 7 to 22.'],
       ['type' => 'heading', 'text' => 'Meet the Competitors'],
       ['type' => 'paragraph', 'text' => 'Following the hype of Masters Bangkok, the 2025 VCT season ramped up across the four International Leagues: VCT Americas, VCT CN, VCT EMEA, and VCT Pacific. In each league, twelve teams went head-to-head to determine which three would represent their region in Toronto. The list below represents the top talent from each region:'],
+      ['type' => 'image', 'image' => 'images/Meet the Competitors.jpg'],
+      ['type' => 'table',
+        'headers' => ['VCT Americas', 'VCT Pacific', 'VCT EMEA', 'VCT CN'],
+        'rows' => [
+          ['G2 Esports',       'Rex Regum Qeon', 'Fnatic',         'XLG Esports'],
+          ['Sentinels',        'Gen.G Esports',  'Team Heretics',  'Bilibili Gaming'],
+          ['MiBR',             'Paper Rex',      'Team Liquid',    'Wolves Esports'],
+        ]
+      ],
       ['type' => 'heading', 'text' => 'Tournament Format'],
       ['type' => 'video', 'url' => 'https://youtu.be/L6Q5ozkdBbw'],
       ['type' => 'paragraph', 'text' => 'Masters Toronto will be split into two parts - the Swiss Stage and the Playoffs Stage.'],
@@ -266,28 +369,11 @@ $news_details = [
       ['type' => 'image', 'image' => 'images/Masters Toronto On-Air talent2.jpg'],
       ['type' => 'heading', 'text' => 'Where to Watch'],
       ['type' => 'paragraph', 'text' => 'The tournament will be broadcast in multiple languages with the full list of channels and Watch Parties shared in the coming weeks.'],
-      ['type' => 'list','items' => [
-          [
-            'text' => 'Twitch',
-            'type' => 'list',
-            'items' => [
-              ['text' => 'twitch.tv/valorant', 'url' => 'https://twitch.tv/valorant']
-            ]
-          ],
-          [
-            'text' => 'YouTube',
-            'type' => 'list',
-            'items' => [
-              ['text' => 'English YouTube', 'url' => 'https://www.youtube.com/@ValorantEsports']
-            ]
-          ],
-          [
-            'text' => 'TikTok',
-            'type' => 'list',
-            'items' => [
-              ['text' => 'TikTok Live Feed', 'url' => 'https://www.tiktok.com/@valorantesports/live']
-            ]
-          ]
+      ['type' => 'list',
+        'items' => [
+          ['text' => 'Twitch - twitch.tv/valorant', 'url' => 'https://twitch.tv/valorant'],
+          ['text' => 'YouTube - English YouTube', 'url' => 'https://www.youtube.com/@ValorantEsports'],
+          ['text' => 'TikTok - TikTok Live Feed', 'url' => 'https://www.tiktok.com/@valorantesports/live']
         ]
       ],
       ['type' => 'heading', 'text' => 'The Road to Champions Paris'],

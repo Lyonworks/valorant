@@ -2,7 +2,12 @@
 include 'data/detail.php';
 
 $id = $_GET['id'] ?? null;
-$detail = $news_details[$id] ?? null;
+
+if (!$id || !isset($news_details[$id])) {
+  http_response_code(404);
+  include '404.php';
+  exit;
+}
 
 if ($detail && isset($detail['content'][0]) && $detail['content'][0]['type'] === 'video') {
   $youtubeUrl = $detail['content'][0]['url'] ?? null;
@@ -13,6 +18,32 @@ if ($detail && isset($detail['content'][0]) && $detail['content'][0]['type'] ===
 }
 
 include 'partials/header.php';
+
+function renderRichText($text) {
+  // Jika sudah ada tag HTML (seperti <a> atau <strong>), langsung return tanpa htmlspecialchars
+  if (preg_match('/<[^>]+>/', $text)) {
+    return $text;
+  }
+
+  // Escape karakter khusus
+  $escaped = htmlspecialchars($text);
+
+  // Bold Markdown
+  $escaped = preg_replace('/\*\*(.*?)\*\*/', '<strong>$1</strong>', $escaped);
+
+  // Auto-link domain/URL
+  $escaped = preg_replace_callback(
+    '/((https?:\/\/)?[\w.-]+\.[a-z]{2,}(\/\S*)?)/i',
+    function ($match) {
+      $url = $match[1];
+      $href = (strpos($url, 'http') === 0) ? $url : "https://$url";
+      return '<a href="' . htmlspecialchars($href) . '" class="valorant-link text-danger" target="_blank" rel="noopener noreferrer">' . htmlspecialchars($url) . '</a>';
+    },
+    $escaped
+  );
+
+  return $escaped;
+}
 
 if (!$detail): ?>
   <div class="container py-5 text-center text-danger">
@@ -48,34 +79,41 @@ if (!$detail): ?>
     <div class="news-detail-content">
       <?php foreach ($detail['content'] as $block): ?>
         <?php if ($block['type'] === 'paragraph'): ?>
-          <p class="text-dark fs-5 mb-4"><?= nl2br(htmlspecialchars($block['text'])) ?></p>
+          <p class="fs-5 mb-4">
+            <?= renderRichText($block['text']) ?>
+          </p>
 
         <?php elseif ($block['type'] === 'heading'): ?>
-          <h2 class="mt-5 mb-3 fw-bold text-dark text-center"><?= htmlspecialchars($block['text']) ?></h2>
+          <h2 class="mt-5 mb-3 fw-bold text-center"><?= htmlspecialchars($block['text']) ?></h2>
 
         <?php elseif ($block['type'] === 'list' && !empty($block['items'])): ?>
-          <ul class="mb-4">
+          <ul class="mb-4 ps-3">
             <?php foreach ($block['items'] as $item): ?>
-              <li class="text-dark fs-5">
+              <li class="fs-5">
                 <?php
-                if (is_array($item) && isset($item['text'], $item['items'])) {
-                  echo htmlspecialchars($item['text']) . ':';
-                  echo '<ul class="mt-2">';
-                  foreach ($item['items'] as $subItem) {
-                    if (is_array($subItem) && isset($subItem['text'], $subItem['url'])) {
-                      echo '<li><a href="' . htmlspecialchars($subItem['url']) . '" class="valorant-link" target="_blank" rel="noopener noreferrer">'
-                        . htmlspecialchars($subItem['text']) . '</a></li>';
-                    } elseif (is_string($subItem)) {
-                      if (preg_match('/https?:\/\/[^\s]+/', $subItem, $m)) {
-                        echo '<li><a href="' . htmlspecialchars($m[0]) . '" class="valorant-link" target="_blank" rel="noopener noreferrer">' . htmlspecialchars($subItem) . '</a></li>';
-                      } elseif (preg_match('/^[\w\.\-]+\.[a-z]{2,}(\/[^\s]*)?$/i', $subItem)) {
-                        echo '<li><a href="https://' . htmlspecialchars($subItem) . '" class="valorant-link" target="_blank" rel="noopener noreferrer">' . htmlspecialchars($subItem) . '</a></li>';
-                      } else {
-                        echo '<li>' . htmlspecialchars($subItem) . '</li>';
-                      }
+                if (is_array($item)) {
+                  if (isset($item['text'], $item['url'])) {
+                    if (preg_match('/^(.*?)-\s*(.+)$/', $item['text'], $match)) {
+                      $platform = trim($match[1]);
+                      $handle = trim($match[2]);
+                      echo htmlspecialchars($platform) . ' - <a href="' . htmlspecialchars($item['url']) . '" class="valorant-link" target="_blank" rel="noopener noreferrer">' . htmlspecialchars($handle) . '</a>';
+                    } else {
+                      echo '<a href="' . htmlspecialchars($item['url']) . '" class="valorant-link" target="_blank" rel="noopener noreferrer">' . htmlspecialchars($item['text']) . '</a>';
                     }
+                  } elseif (isset($item['text'], $item['items']) && is_array($item['items'])) {
+                    echo htmlspecialchars($item['text']);
+                    echo '<ul class="mt-2 ps-3">';
+                    foreach ($item['items'] as $subItem) {
+                      echo '<li class="fs-6">';
+                      if (is_string($subItem)) {
+                        echo htmlspecialchars($subItem);
+                      } elseif (is_array($subItem) && isset($subItem['text'], $subItem['url'])) {
+                        echo '<a href="' . htmlspecialchars($subItem['url']) . '" class="valorant-link" target="_blank" rel="noopener noreferrer">' . htmlspecialchars($subItem['text']) . '</a>';
+                      }
+                      echo '</li>';
+                    }
+                    echo '</ul>';
                   }
-                  echo '</ul>';
                 } elseif (is_string($item)) {
                   if (preg_match('/^(.+?):\s*(.+)$/', $item, $matches)) {
                     $label = htmlspecialchars($matches[1]);
@@ -113,6 +151,28 @@ if (!$detail): ?>
               </li>
             <?php endforeach; ?>
           </ul>
+        
+        <?php elseif ($block['type'] === 'table' && !empty($block['headers']) && !empty($block['rows'])): ?>
+          <div class="table-responsive my-4">
+            <table class="table custom-valorant-table text-center align-middle">
+              <thead>
+                <tr>
+                  <?php foreach ($block['headers'] as $header): ?>
+                    <th><?= htmlspecialchars($header) ?></th>
+                  <?php endforeach; ?>
+                </tr>
+              </thead>
+              <tbody>
+                <?php foreach ($block['rows'] as $row): ?>
+                  <tr>
+                    <?php foreach ($row as $cell): ?>
+                      <td><?= htmlspecialchars($cell) ?></td>
+                    <?php endforeach; ?>
+                  </tr>
+                <?php endforeach; ?>
+              </tbody>
+            </table>
+          </div>
 
         <?php elseif ($block['type'] === 'image' && !empty($block['image'])): ?>
           <div class="text-center my-4">
@@ -121,6 +181,14 @@ if (!$detail): ?>
               <p class="text-muted mt-2"><?= htmlspecialchars($block['caption']) ?></p>
             <?php endif; ?>
           </div>
+
+        <?php elseif ($block['type'] === 'gif' && !empty($block['url'])): ?>
+          <div class="text-center my-4">
+            <img src="<?= htmlspecialchars($block['url']) ?>" class="img-fluid rounded" alt="<?= htmlspecialchars($block['alt'] ?? 'GIF') ?>">
+            <?php if (!empty($block['caption'])): ?>
+              <p class="text-muted mt-2"><?= htmlspecialchars($block['caption']) ?></p>
+            <?php endif; ?>
+          </div>  
 
         <?php elseif ($block['type'] === 'video' && !empty($block['url'])): ?>
           <?php
