@@ -9,6 +9,8 @@ if (!$id || !isset($news_details[$id])) {
   exit;
 }
 
+$detail = $news_details[$id];
+
 if ($detail && isset($detail['content'][0]) && $detail['content'][0]['type'] === 'video') {
   $youtubeUrl = $detail['content'][0]['url'] ?? null;
   if ($youtubeUrl) {

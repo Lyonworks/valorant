@@ -13,8 +13,8 @@ $news_details = [
         'Stage 2 Champion',
         'Stage 2 Runner-up',
         '#1 Championship Points',
-        '#2 Championship Points'
-      ]],
+        '#2 Championship Points']
+      ],
       ['type' => 'paragraph', 'text' => 'A new stage is on the way – Corrode drops in, along with a new patch, fresh comps, and new players. Will we see a new champion too? From July 18 to August 31, experience all the excitement of VCT Americas Stage 2!'],
       ['type' => 'video', 'url' => 'https://youtu.be/RgPTI4u5aME'],
       ['type' => 'heading', 'text' => 'TOURNAMENT SCHEDULE AND FORMAT'],
@@ -169,19 +169,148 @@ $news_details = [
           [
             'text' => 'Reyna',
             'type' => 'list',
-            'items' => ['Waylay has shown a steep mastery curve since her release, where her win rate significantly improves the more games you play. That said, she is still slightly weak at all skill levels. These buffs aim to sharpen her ability to take fights right after exiting Lightspeed and make her Refract loop easier to play around, as well as improve Waylay’s flow and gameplay feel. Saturate does not land at a comparable rate to other abilities, so we’re increasing its power to justify its 300 credit cost.',
-                        'Agent clarity and consistency improvements = Breach, Sova, Clove, Killjoy, Cypher, Omen, Brimstone']
+            'items' => ['Leer is tankier than many of our other comparable shootable objects, and can feel especially so when it’s unclear if you are successfully shooting Leer after it has formed.',
+                        'Leer HP decreased 100 >> 80',
+                        'Audio and visual hit confirm feedback has been added to shots that land on Leer.']
           ]
         ]
       ],
-      ['type' => 'paragraph', 'text' => "We’re also adjusting Neon’s Relay Bolt and Phoenix’s Curveball to have room for some additional counterplay. These abilities are meant to create strong combat advantages, but their fast activation left little time for opponents to respond. These changes aim to increase moment-to-moment counterplay without removing the need to anticipate and position against them."],
-      ['type' => 'heading', 'text' => "AGENT UPDATES"],
-      ['type' => 'paragraph', 'text' => "We’ve made some adjustments to agents to improve clarity and consistency, as well as some balance changes."],
+      ['type' => 'paragraph', 'text' => "We’re also adjusting Neon’s <strong>Relay Bolt</strong> and Phoenix’s <strong>Curveball</strong> to have room for some additional counterplay. These abilities are meant to create strong combat advantages, but their fast activation left little time for opponents to respond. These changes aim to increase moment-to-moment counterplay without removing the need to anticipate and position against them."],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'Neon',
+            'type' => 'list',
+            'items' => ['<strong>Relay Bolt</strong> Windup increased 0.8s >>> 1.0s']
+          ]
+        ]
+      ],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'Phoenix',
+            'type' => 'list',
+            'items' => ['<strong>Curveball</strong> Windup increased 0.5s >>> 0.6s']
+          ]
+        ]
+      ],
+      ['type' => 'heading', 'text' => "CLARITY AND CONSISTENCY UPDATES"],
+      ['type' => 'paragraph', 'text' => "These below changes are part of our ongoing effort to improve gameplay consistency & combat clarity similar to our updates to Neon’s <strong>Overdrive</strong> visual effects and Deadlock’s <strong>Barrier Mesh</strong> health states."],
       ['type' => 'heading', 'text' => "MAP UPDATES"],
-      ['type' => 'paragraph', 'text' => "We’re introducing a new map, Corrode, and rotating out Pearl and Split from Competitive and Deathmatch. Bind and Corrode are now in Competitive and Deathmatch."],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'NEW MAP: <strong>CORRODE</strong>',
+            'type' => 'list',
+            'items' => ['A 5v5 spike mode map featuring layered defenses and strategic depth across its medieval fortress setting. Navigate through contrasting castle fortifications and village structures, battling across multi-level positions in this salt-crystallized stronghold shaped by radianite storms.',
+                        'Corrode features three lanes and two sites.']
+          ]
+        ]
+      ],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'MAP POOL UPDATES',
+            'type' => 'list',
+            'items' => ['<strong>BIND</strong> and <strong>CORRODE</strong> are IN the COMPETITIVE and DEATHMATCH queues.',
+                        '<strong>PEARL</strong> and <strong>SPLIT</strong> are OUT of the COMPETITIVE and DEATHMATCH queues.',
+                        '<strong>CORRODE</strong> is now also available to play in Premier, Unrated, Swiftplay, Spike Rush, and Escalation.']
+          ]
+        ]
+      ],
+      ['type' => 'heading', 'text' => "MODES UPDATES"],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'CORRODE QUEUE',
+            'type' => 'list',
+            'items' => ['<Corrode Only queue will be available for 5 days.',
+                        'Corrode Only games will use the Swiftplay mode format.']
+          ]
+        ]
+      ],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'ESCALATION',
+            'type' => 'list',
+            'items' => ['Escalation will be temporarily disabled during the 5-day Corrode-only queue period.']
+          ]
+        ]
+      ],
+      ['type' => 'list', 'items' => ['Icebox has been reenabled in Deathmatch and Escalation game modes after addressing spawn-related issues that emerged in patch 10.09.']],
       ['type' => 'heading', 'text' => "COMPETITIVE UPDATES"],
-      ['type' => 'paragraph', 'text' => "For this midseason reset, you may see less of a drop in rank after completing placements."],
-      ['type' => 'paragraph', 'text' => "As always, we’re working hard to fix bugs and improve your experience."],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'Ranked Gun Buddy has arrived!',
+            'type' => 'list',
+            'items' => ['Act IV starts today so you’ll be receiving your ranked buddy this patch. Remember that it’s based on the highest rank you achieved throughout the first three acts of Season 2025.']
+          ]
+        ]
+      ],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'Corrode Launch Event',
+            'type' => 'list',
+            'items' => ['Corrode will be available to play in Competitive queue on the first day of the patch!',
+                        'RR losses on Corrode will be 50% reduced for the first two weeks, but don’t worry, you will still receive 100% of the RR for any wins on Corrode']
+          ]
+        ]
+      ],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'We’ve made some adjustments to rank resets. Hop back into Competitive and see where you land!',
+            'type' => 'list',
+            'items' => ['Players may see less of a drop in rank after completing placements for this midseason reset.',
+                        'The maximum rank you can place is now Ascendant 3.']
+          ]
+        ]
+      ],
+      ['type' => 'heading', 'text' => "BUG FIXES"],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'General',
+            'type' => 'list',
+            'items' => ['Fixed a bug with all Vulnerables/Fragiles where the visual effects could linger on a target longer than the gameplay debuff duration',
+                        'Fixed a bug where destructible deployables like Tejo’s <strong>Stealth Drone</strong> and Fade’s <strong>Prowlers</strong> could keep teleporter doors open on Bind']
+          ]
+        ]
+      ],
+      ['type' => 'heading', 'text' => "PC ONLY"],
+      ['type' => 'heading', 'text' => "PREMIER UPDATES"],
+      ['type' => 'paragraph', 'text' => '<strong>Welcome to Stage V25A4!</strong> Participate in Premier to earn new team recognition!'],
+      ['type' => 'list', 'items' => [
+        'As soon as you join a team, your social hover card now shows your Premier team name, what division you’re in, and your team’s current Premier Score.']
+      ],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'Corrode Launch Event',
+            'type' => 'list',
+            'items' => ['Corrode will be available to play in Competitive queue on the first day of the patch!',
+                        'RR losses on Corrode will be 50% reduced for the first two weeks, but don’t worry, you will still receive 100% of the RR for any wins on Corrode']
+          ]
+        ]
+      ],
+      ['type' => 'list', 'items' => [
+        'Qualify for playoffs to evolve your Plating, and win playoffs to unlock the <strong>Champion’s Aura</strong> - a new player card effect that sticks with you for the entire Act after your playoff win!']
+      ],
+      ['type' => 'list', 'items' => [
+        'You can check out everything that’s available in the new Awards tab of the Premier hub.']
+      ],
+      ['type' => 'heading', 'text' => "PLAYER BEHAVIOR UPDATES"],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'You can now report inappropriate Premier team names from Standings and Match History in the Premier Hub and also from the end of game screens.',
+            'type' => 'list',
+            'items' => ['If your team name is found inappropriate, you may be forced to rename.',
+                        'Repeatedly choosing offensive names will result in Premier restrictions.']
+          ]
+        ]
+      ],
+      ['type' => 'heading', 'text' => "CONSOLE ONLY"],
+      ['type' => 'heading', 'text' => "ESPORTS FEATURES"],
+      ['type' => 'list','items' => [
+          [
+            'text' => 'The Esports Hub is coming to Console!',
+            'type' => 'list',
+            'items' => ['Check out the VCT overview page that provides a concise snapshot of where we are on the year long VCT journey, dive into the brackets for the International League Stage 2 which starts on July 12, and get familiar with our VCT teams and players!']
+          ]
+        ]
+      ]
     ]
   ],
   4 => [
@@ -200,57 +329,195 @@ $news_details = [
     ]
   ],
   7 => [
-    'title' => 'VCT Americas 2025 Stage 2: Everything You Need to Know',
-    'date' => 'June 27, 2025',
-    'author' => 'Valorant Esports Staff',
+    'image' => 'images/Champions of Champions Fan Art, Cosplay, Esports Edits.jpg',
+    'date' => '6/21/2025',
+    'author' => 'Community',
+    'title' => 'Champions of Champions: Fan Art, Cosplay, Esports Edits',
+    'description' => 'Champions isn’t just about what happens on stage. It’s about the community that makes VALORANT what it is.',
     'content' => [
-      ['type' => 'paragraph', 'text' => 'Stage 2 kicks off on July 18th at 2pm PT...'],
-      ['type' => 'heading', 'text' => 'TOURNAMENT SCHEDULE AND FORMAT'],
-      ['type' => 'paragraph', 'text' => 'In case you missed it, the Stage 2 Draw Show determined the groups...'],
+      ['type' => 'paragraph', 'text' => 'To celebrate our community’s creativity alongside the competition at VALORANT Champions Paris, we’re launching something new: Champions of Champions. Whether you’re an artist, cosplayer, frag-reel editor, or all of the above, we want you to show us what you got and submit your work for an opportunity to represent your region.'],
+      ['type' => 'paragraph', 'text' => 'Here’s a quick breakdown of how the contest is structured:'],
       ['type' => 'list', 'items' => [
-        'Stage 2 Champion',
-        'Stage 2 Runner-up',
-        '#1 Championship Points',
-        '#2 Championship Points'
-      ]],
-      ['type' => 'heading', 'text' => 'BUY TICKETS'],
-      ['type' => 'paragraph', 'text' => 'Experience the excitement of VCT Americas live at the iconic Riot Games Arena...'],
+        'There are three submission categories: <strong>Fan Art, Cosplay, and Esports Edit</strong>',
+        'Submissions are open August 15-22.',
+        'A team of Riot judges will be handpicking the <strong>top 25 submissions per region, per category,</strong> to go to the Voting Rounds.']
+      ],
+      ['type' => 'paragraph', 'text' => 'Now, let’s get on with the details:'],
+      ['type' => 'image', 'image' => 'images/Fan Art, Cosplay, Esports Edits.jpg'],
+      ['type' => 'heading', 'text' => 'FAN ART: SHOW US WHAT IT FEELS LIKE TO CLUTCH'],
+      ['type' => 'paragraph', 'text' => 'Ever been the last player standing, heart pounding as you defuse with 0.01 seconds left or land that impossible flick to clinch a 16–14 overtime?'],
+      ['type' => 'paragraph', 'text' => 'We want you to show us your <strong>VALORANT fan art</strong> that captures exactly <strong>how the clutch moments feel,</strong> in your own style. And in the spirit of celebrating VCT, please include the <a href="https://www.flickr.com/photos/valorantesports/53945956211/in/album-72177720319751205" class="valorant-link" target="_blank" rel="noopener noreferrer">Champions trophy</a> in some way, shape, or form.'],
+      ['type' => 'heading', 'text' => 'COSPLAY: SHOW US YOUR COSPLAY'],
+      ['type' => 'paragraph', 'text' => 'Built or bought, we want to see how you bring the VAL world to life, make it your own, and use it to stand out from the crowd.'],
+      ['type' => 'paragraph', 'text' => 'Submit a <strong>photo</strong> of yourself in a <strong>VALORANT cosplay</strong> that makes us do a double-take. Feel free to edit the image however you’d like as long as you and your cosplay are clearly visible and there is no use of AI. Want to dress up as Reyna? Do it. Want to be everyone’s little bro Wingman? Nice. Want to dress up as A-Site Heaven on Ascent? PLEASE go for it because how would you even do that?'],
+      ['type' => 'heading', 'text' => 'ESPORTS EDIT: SHOW US YOUR EDITING SKILLS'],
+      ['type' => 'paragraph', 'text' => 'In 30 seconds or less, we want to see a <strong>video edit</strong> using <strong>professional VCT gameplay from Global Events or International Leagues</strong>. Whether it’s a compilation of headshots, a slow-motion edit of one kill, or any other insane thing you want to make. As for the music, you’ll have two playlists you can select a track (or tracks, who knows?) from the guidelines section at the end of this article.'],
+      ['type' => 'image', 'image' => 'images/ESPORTS EDIT SHOW US YOUR EDITING SKILLS.jpg'],
+      ['type' => 'paragraph', 'text' => 'How it works:'],
+      ['type' => 'paragraph', 'text' => 'Submission Week: <strong>August 15-22</strong>'],
+      ['type' => 'list', 'items' => [
+        'You have from now until Submission Week to come up with your beautiful creation.',
+        'Submissions will take place at https://ftw.riotgames.com/valorant. The Champions of Champions page will go live closer to Submission Week, so make sure to check it out for any updates, submission requirements and other rules!',
+        'To submit, you will need to post your submission to a supported social media platform. Look for more details around supported platforms later this summer!']
+      ],
+      ['type' => 'paragraph', 'text' => 'Selection Round:'],
+      ['type' => 'paragraph', 'text' => 'Once submission week closes, a team of Riot judges will select their top 25 per category, per region to go to the voting rounds. Submissions will be judged based on creativity, relevance to the theme, execution, and adherence to the guidelines. Works that do not fully follow the general or category guidelines will be disqualified from consideration for the Voting Rounds regardless of how unique they may be.'],
+      ['type' => 'paragraph', 'text' => 'Voting Rounds:'],
+      ['type' => 'paragraph', 'text' => 'There will be three rounds of competition, with advancing contestants selected as part of a mix between community votes and a Riot judging panel. As with the Selection Round, submissions will be judged based on creativity, relevance to the theme, and execution, but now with fan voting considered as part of the overall evaluation. The judging and final determination of who moves to the next round will be at the sole discretion of the judges. Players can connect to their Riot account to vote for their favorite submissions for every region. '],
+      ['type' => 'paragraph', 'text' => 'Round 1 (Group Stage): <strong>September 12-22</strong>'],
+      ['type' => 'list', 'items' => [
+        'The top 25 for each region will be featured on the Champions of Champions page for players to vote.',
+        'Players have until September 22nd to vote for their 5 favorite submissions.']
+      ],
+      ['type' => 'paragraph', 'text' => 'Round 2 (Playoffs): <strong>September 25-29</strong>'],
+      ['type' => 'list', 'items' => [
+        'The top 8 for each region will have moved on to round 2 for the next round of voting.',
+        'Players have until September 29th to vote for their favorite submission.']
+      ],
+      ['type' => 'paragraph', 'text' => 'Round 3 (Finals): <strong>October 3-4</strong>'],
+      ['type' => 'list', 'items' => [
+        'The top entry for each region will advance to the final round of voting.',
+        'Players have until October 4th to vote for their favorite submission.']
+      ],
+      ['type' => 'paragraph', 'text' => '<strong>The winner of each category will be announced at VALORANT Champions Paris Grand Finals on October 5th and have their work featured at Riot HQ!</strong>'],
+      ['type' => 'heading', 'text' => 'Champions of Champions Guidelines'],
+      ['type' => 'paragraph', 'text' => '<strong>General Guidelines for all categories:</strong>'],
+      ['type' => 'list', 'items' => [
+        'No NSFW content (including but not limited to pornographic, violent, or harmful material)',
+        '<strong>Must be an original creation without the use of AI</strong>',
+        'Riot Games will determine whether an entry is eligible at its sole discretion',]
+      ],
+      ['type' => 'paragraph', 'text' => '<strong>FAN ART: Esport Edit Music Guidelines</strong>'],
+      ['type' => 'paragraph', 'text' => '<a href="https://open.spotify.com/playlist/4tyTLcBxJnf7DcQcHjwt0W" class="valorant-link" target="_blank" rel="noopener noreferrer">VALORANT Creator-Safe Playlist</a> - If you select tracks from this list, you can use the music in your video edit in accordance with Riot’s <a href="https://www.riotgames.com/en/riot-music-creator-safe-guidelines#:~:text=The%20songs%20on%20the%20Creator,our%20permission%20for%20any%20purpose." class="valorant-link" target="_blank" rel="noopener noreferrer">Creator Safe Guidelines</a>, and your video should not receive any copyright strikes or monetization claims (so that you will be able keep any ad revenue from your video).'],
+      ['type' => 'paragraph', 'text' => '<a href="https://open.spotify.com/playlist/5CO91SCOHiYxSjuBESOcVi?pi=lJoChTZwRnGPg&nd=1&dlsi=b95e0597175f473a" class="valorant-link" target="_blank" rel="noopener noreferrer">VALORANT UGC-Friendly Playlist</a> - If you select any tracks from this list, you can use the music in your video edit in accordance with Riot’s <a href="https://www.riotgames.com/en/legal" class="valorant-link" target="_blank" rel="noopener noreferrer">Legal Jibber Jabber</a>, and your video should not receive any copyright strikes, but the video may receive a monetization claim from the publisher(s) or recording owner(s) of that track, and those entities would retain the ad revenue from your video. Although these tracks are not “Creator-Safe,” to avoid copyright strikes, please also refer to the <a href="https://www.riotgames.com/en/riot-music-creator-safe-guidelines#:~:text=The%20songs%20on%20the%20Creator,our%20permission%20for%20any%20purpose." class="valorant-link" target="_blank" rel="noopener noreferrer">Creator Safe Guidelines</a> to ensure your content is not “commercially exploiting” the music itself. '],
+      ['type' => 'paragraph', 'text' => '<strong>Who Can Participate</strong>'],
+      ['type' => 'paragraph', 'text' => 'Champions of Champions is open to participants in all regions except for Crimea, Donetsk, Luhansk, Cuba, Iran, Myanmar, North Korea, Sudan, Syria, Venezuela, Quebec, or any other region where this contest is void.']
     ]
   ],
   8 => [
-    'title' => 'VCT Americas 2025 Stage 2: Everything You Need to Know',
-    'date' => 'June 27, 2025',
+    'image' => 'images/Post-Champions Preview First Look at the Next Events',
+    'date' => 'June 20, 2025',
     'author' => 'Valorant Esports Staff',
+    'title' => 'Post-Champions Preview: First Look at the Next Events',
+    'description' => 'Find out more about Ascension, Game Changers, and the VALORANT Partner Series taking place after Champions 2025!',
     'content' => [
-      ['type' => 'paragraph', 'text' => 'Stage 2 kicks off on July 18th at 2pm PT...'],
-      ['type' => 'heading', 'text' => 'TOURNAMENT SCHEDULE AND FORMAT'],
-      ['type' => 'paragraph', 'text' => 'In case you missed it, the Stage 2 Draw Show determined the groups...'],
+      ['type' => 'heading', 'text' => 'What’s Next for VALORANT Esports After Champions 2025'],
+      ['type' => 'paragraph', 'text' => 'Today we want to share the initial details about VALORANT competitions taking place after the conclusion of Champions 2025!'],
+      ['type' => 'paragraph', 'text' => 'After Champions concludes in early October, several major events including Ascension, Game Changers, and international tournaments will see top teams compete for glory, promotion, and trophies! This is just the start of what you can expect at the close of the year, and we’ll be announcing additional information about events, tickets, and broadcasts later this summer.'],
+      ['type' => 'image', 'image' => 'images/What’s Next for VALORANT Esports After Champions 2025.jpg'],
+      ['type' => 'heading', 'text' => 'Ascension: The Next Step to the International Leagues'],
+      ['type' => 'paragraph', 'text' => 'The 2025 Ascension tournaments will run from October 13 to 26, immediately after Champions. Top Challengers teams and Ascended teams will battle it out for their spot in the International Leagues for 2026. Will the incumbents defend their place or will a new team rise to the top tier of the sport? Find out when your region’s event is taking place below:'],
+      ['type' => 'paragraph', 'text' => 'VCT Ascension EMEA:'],
       ['type' => 'list', 'items' => [
-        'Stage 2 Champion',
-        'Stage 2 Runner-up',
-        '#1 Championship Points',
-        '#2 Championship Points'
-      ]],
-      ['type' => 'heading', 'text' => 'BUY TICKETS'],
-      ['type' => 'paragraph', 'text' => 'Experience the excitement of VCT Americas live at the iconic Riot Games Arena...'],
+        'October 19 - 26th in the VCT EMEA Berlin studio']
+      ],
+      ['type' => 'paragraph', 'text' => 'VCT Ascension AMERICAS'],
+      ['type' => 'list', 'items' => [
+        'October 17 - 26th in the Riot Games São Paulo studio',
+        'More info <a href="https://valorantesports.com/en-US/news/introducing-ascension-americas-2025" class="valorant-link" target="_blank" rel="noopener noreferrer">here</a>']
+      ],
+      ['type' => 'paragraph', 'text' => 'VCT Ascension CN'],
+      ['type' => 'list', 'items' => [
+        'October 11 - 19th in the VCT CN Studio']
+      ],
+      ['type' => 'paragraph', 'text' => '<a href="https://x.com/vctpacific/status/1914861785678565743" class="valorant-link" target="_blank" rel="noopener noreferrer">VCT Ascension PACIFIC</a>'],
+      ['type' => 'list', 'items' => [
+        'October 13 - 26th in Bangkok, Thailand']
+      ],
+      ['type' => 'image', 'image' => 'images/Ascension The Next Step to the International Leagues.jpg'],
+      ['type' => 'paragraph', 'text' => 'Ascended Team Extends their Stay in the IL'],
+      ['type' => 'list', 'items' => [
+        'If they qualify for Champions (only one team can extend their stay)']
+      ],
+      ['type' => 'paragraph', 'text' => 'Ascended Team Defends their slot at Ascension'],
+      ['type' => 'list', 'items' => [
+        'If they qualify for Stage 2 playoffs but fail to qualify for Champions',
+        'If they are top 8 in Champions Points but fails to qualify for Champions',
+        'If they are the lower performing of two Ascension Teams who qualified for Champions',
+        'If they are tied for Top 8 in Champions Points']
+      ],
+      ['type' => 'paragraph', 'text' => 'Ascended Team Relegates Directly to Challengers'],
+      ['type' => 'list', 'items' => [
+        ' If they do not meet any of the criteria listed above']
+      ],
+      ['type' => 'heading', 'text' => 'Game Changers Championship Lands in Seoul'],
+      ['type' => 'image', 'image' => 'images/Game Changers Championship Lands in Seoul.jpg'],
+      ['type' => 'paragraph', 'text' => 'We’re also thrilled to share that the Game Changers Championship will take place for the first time in Seoul, at the historic LoL Park, from November 20 - 30th. The event will showcase the best Game Changers team from around the world. We’ve shared some initial details about the event already, notably the introduction of an LCQ for GC Americas, so <a href="https://valorantesports.com/en-US/news/game-changers-2025-slot-allocation-and-the-new-americas-lcq" class="valorant-link" target="_blank" rel="noopener noreferrer">head on over to find out more.</a>'],
+      ['type' => 'heading', 'text' => 'Introducing VCT Partner Series'],
+      ['type' => 'image', 'image' => 'images/Introducing VCT Partner Series.jpg'],
+      ['type' => 'paragraph', 'text' => 'This year we’re introducing <strong>VCT Partner Series</strong>, a title reserved for the biggest events taking place between VCT seasons. With VCT Partner Series events we’ll work to recognize these events, create schedule alignment during the planning stages, support TO’s with sourcing VCT teams, and explore open qualifiers that will grant opportunities to Challengers and Amateur teams to clash with partnered teams. These events are just the first batch of tournaments to look forward to in the post Champs period, and we’ll be sharing additional details and updates closer to Champions.'],
+      ['type' => 'heading', 'text' => '2025 VCT Partner Series Event Lineup'],
+      ['type' => 'paragraph', 'text' => 'Here’s the international events you can look forward to after Champions:'],
+      ['type' => 'list','items' => [
+          [
+            'text' => '<strong>Red Bull Home Ground World Final</strong>',
+            'type' => 'list',
+            'items' => ['Date: November 14-16',
+                        'Taking place in the Americas, Red Bull Home Ground World Final will feature top VCT teams and qualified teams battling their way towards the finals which will take place in New York.']
+          ]
+        ]
+      ],
+      ['type' => 'list','items' => [
+          [
+            'text' => '<strong>SOOP VALORANT League Pacific</strong>',
+            'type' => 'list',
+            'items' => ['Date: December 2-7',
+                        'Top teams from around the world will face off, providing a preview of how new rosters stack up ahead of the 2026 season.']
+          ]
+        ]
+      ],
+      ['type' => 'list','items' => [
+          [
+            'text' => '<strong>Project Blender</strong>',
+            'type' => 'list',
+            'items' => ['Date: October - December',
+                        'Taking place across EMEA, The Blender is a new VALORANT tournament with groundbreaking rules, welcoming every tier of play through an open qualifier of up to 1,024 teams; through successive stages teams from VRC, Premier, Challengers, Game Changers, VCT EMEA and any other team of the ecosystem will fight for advancement with the best will clashing in December to crown the inaugural champion.']
+          ]
+        ]
+      ],
+      ['type' => 'heading', 'text' => 'Looking Ahead'],
+      ['type' => 'paragraph', 'text' => 'With Game Changers, Ascension, VCT Presents and even more additional events, the end of the year will be full of international competition. We’ll see the debut of new rosters, new formats, and a chance up and coming teams to test their skills against established teams.'],
     ]
   ],
   9 => [
-    'title' => 'VCT Americas 2025 Stage 2: Everything You Need to Know',
-    'date' => 'June 27, 2025',
-    'author' => 'Valorant Esports Staff',
+    'image' => 'images/Masters Toronto Map Reveal Showmatch and Grand Finals this weekend.jpg',
+    'date' => 'June 16, 2025',
+    'author' => '',
+    'title' => 'Masters Toronto: Map Reveal Showmatch and Grand Finals this weekend',
+    'description' => 'Who will be the second to lift a Masters trophy in 2025? Tune in for the Finals and a new map reveal!',
     'content' => [
-      ['type' => 'paragraph', 'text' => 'Stage 2 kicks off on July 18th at 2pm PT...'],
-      ['type' => 'heading', 'text' => 'TOURNAMENT SCHEDULE AND FORMAT'],
-      ['type' => 'paragraph', 'text' => 'In case you missed it, the Stage 2 Draw Show determined the groups...'],
+      ['type' => 'paragraph', 'text' => 'The moment is here. The end of this chapter is near. Get ready for the Grand Finals of Masters Toronto.'],
+      ['type' => 'paragraph', 'text' => 'The road to Champions Paris doesn’t stop, and after more than ten days of intense competition, unforgettable matches, upsets, and surprises, the final showdown has arrived. A new final, a new champion, and a brand-new trophy are on the line.'],
+      ['type' => 'paragraph', 'text' => 'Don’t forget to tune in this weekend - just by watching, you can unlock an exclusive Title and Spray.'],
+      ['type' => 'image', 'image' => 'images/Masters Toronto Map Reveal Showmatch and Grand Finals this weekend1.jpg'],
+      ['type' => 'paragraph', 'text' => 'Sunday, June 22, is a celebration for all VALORANT esports fans.'],
+      ['type' => 'paragraph', 'text' => 'Before the Grand Final kicks off, Tarik and Disguised Toast will face off live for the first time ever - in a global exclusive on VALORANT’s newest map. You won’t want to miss this special showmatch. Tune in to valorantesports.com to witness all the action!'],
+      ['type' => 'image', 'image' => 'images/Masters Toronto Map Reveal Showmatch and Grand Finals this weekend2.jpg'],
+      ['type' => 'paragraph', 'text' => 'And during the final, we’ll also find out who takes home the coveted Toronto Masters MVP bracelet.'],
+      ['type' => 'image', 'image' => 'images/Masters Toronto Map Reveal Showmatch and Grand Finals this weekend3.jpg'],
+      ['type' => 'paragraph', 'text' => 'Right after the showmatch, it’s time for the main event: the Grand Final, the stars of the show, and the moment we finally crown the Masters Toronto champion.'],
+      ['type' => 'heading', 'text' => 'Where to Watch'],
+      ['type' => 'paragraph', 'text' => 'The Masters Toronto Grand Final will be broadcast in multiple languages with the full list of channels and Watch Parties shared in the coming weeks. '],
+      ['type' => 'list',
+        'items' => [
+          ['text' => 'Twitch - twitch.tv/valorant', 'url' => 'https://twitch.tv/valorant'],
+          ['text' => 'YouTube - English YouTube', 'url' => 'https://www.youtube.com/@ValorantEsports'],
+          ['text' => 'TikTok - TikTok Live Feed', 'url' => 'https://www.tiktok.com/@valorantesports/live']
+        ]
+      ],
+      ['type' => 'heading', 'text' => 'WHERE TO FOLLOW THE VCT'],
+      ['type' => 'paragraph', 'text' => 'Make sure to follow the official VALORANT Esports social channels for additional information about 2025 VCT Season:'],
       ['type' => 'list', 'items' => [
-        'Stage 2 Champion',
-        'Stage 2 Runner-up',
-        '#1 Championship Points',
-        '#2 Championship Points'
-      ]],
-      ['type' => 'heading', 'text' => 'BUY TICKETS'],
-      ['type' => 'paragraph', 'text' => 'Experience the excitement of VCT Americas live at the iconic Riot Games Arena...'],
+        'Twitter/X: @valorantesports',
+        'Facebook: /valorantesports',
+        'Instagram: @valorantesports',
+        'TikTok: @valorantesports',
+        'Twitch: https://www.twitch.tv/valorant',
+        'YouTube: https://www.youtube.com/@ValorantEsports',
+        'Photos from the Event: https://www.flickr.com/photos/valorantesports/',
+        'Official VALORANT Esports News: valorantesports.com/news',
+        'Web: https://valorantesports.com'
+      ]]
     ]
   ],
   11 => [
@@ -395,7 +662,7 @@ $news_details = [
         'Photos from the Event: https://www.flickr.com/photos/valorantesports/',
         'Official VALORANT Esports News: valorantesports.com/news',
         'Web: https://valorantesports.com'
-      ]],
+      ]]
     ]
   ],
   24 => [
