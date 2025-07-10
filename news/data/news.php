@@ -53,7 +53,7 @@ $news = [
     'title' => 'Champions of Champions: Fan Art, Cosplay, Esports Edits',
     'category' => 'Community',
     'date' => '6/21/2025',
-    'image' => 'images/Champions of Champions: Fan Art, Cosplay, Esports Edits.jpg',
+    'image' => 'images/Champions of Champions Fan Art, Cosplay, Esports Edits.jpg',
     'excerpt' => 'Champions isn’t just about what happens on stage. It’s about the community that makes VALORANT what it is.',
   ],
   [
@@ -61,7 +61,7 @@ $news = [
     'title' => 'Post-Champions Preview: First Look at the Next Events',
     'category' => 'Esports',
     'date' => '6/21/2025',
-    'image' => 'images/Post-Champions Preview: First Look at the Next Events.jpg',
+    'image' => 'images/Post-Champions Preview First Look at the Next Events.jpg',
     'excerpt' => 'Find out more about Ascension, Game Changers, and the VALORANT Partner Series taking place after Champions 2025!',
   ],
   [
